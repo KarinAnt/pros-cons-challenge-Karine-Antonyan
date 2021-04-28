@@ -1,0 +1,20 @@
+<div class="space">
+    <p class="title" [class.pros]="title==='pros'" [class.cons]="title==='cons'">{{title | titlecase}}</p>
+    <div class="circle" [class.pros]="title==='pros'" [class.cons]="title==='cons'">
+        <div *ngFor="let item of texts; index as i" class="text">
+            <div>
+                <img class="images" [src]="'../../../../assets/images/' + title + '.png'">
+                <p contenteditable="true" (focusout)="changeText($event, i)" class="list-item">{{item}}</p>
+            </div>
+            <button class="normal" (click)="deleteItem(i)">
+                <img   src="../../../../assets//images/delete.png">
+            </button>
+        </div>
+    </div>
+    <div class="add">
+        <input placeholder="Add new" [(ngModel)]="newText" class="add-text">
+        <button class="normal" (click)="addNew()">
+            <img src="../../../../assets/images/plus--v1.png">
+        </button>
+    </div>
+</div>

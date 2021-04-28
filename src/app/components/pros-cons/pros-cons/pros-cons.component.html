@@ -1,0 +1,8 @@
+<div class="screen" *ngIf="{prosAndCons: (prosAndCons$ | async)} as data">
+    <div>
+        <img src="../../../../assets/images/or.png">
+    </div>
+    <div class="list">
+        <app-list  *ngFor="let prosOrCons of prosAndConsKey; index as i" [texts]="prosAndConsTexts[i]" [title]="prosOrCons"></app-list>
+    </div>
+</div>

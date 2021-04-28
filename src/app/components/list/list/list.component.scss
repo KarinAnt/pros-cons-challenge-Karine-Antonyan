@@ -1,0 +1,80 @@
+.space{
+    width: 100%;
+    margin:3%;
+    font-style: italic;    
+    .title{
+        margin: 0px;
+        padding-left: 10px;
+        font-size: 20px;
+    }
+}
+
+.circle{
+    width: 90%;
+    padding: 2%;
+    border-radius: 5px;
+    border:1px solid;
+}
+.text{
+    display: flex;
+    width: 94%;
+    padding: 2%;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid silver;
+    div{
+        display: flex;
+        align-items: center;
+    }
+}
+.images{
+    width: 35px;
+    height: 35px;
+}
+
+.pros{
+    color: #9cba58;
+    border-color: #c4d49f;
+}
+
+.cons{
+    color: #c14f4f;
+    border-color: #8e3631;
+}
+.normal{
+    background: transparent;
+    border: none;
+
+    img{
+        width: 25px;
+        height: 25px;
+    }
+}
+
+.add{
+    width: 90%;
+    padding: 2%;
+    display: flex;
+    justify-content: space-between;
+
+    input{
+        background: transparent;
+        border: none;
+        border-bottom: 1px solid silver;
+    }
+}
+
+.list-item:focus, .normal:focus, .add-text:focus{
+    outline: none;
+}
+
+.list-item:focus{
+    border-color: silver;
+}
+
+.list-item{
+    background: transparent;
+    border: none;
+    margin: 10px;
+    border-bottom: 1px solid transparent;
+}
